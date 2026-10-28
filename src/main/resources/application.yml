@@ -1,4 +1,13 @@
 spring:
-  web:
+  datasource:
+    url: jdbc:mysql://localhost:3306/anime?useSSL=false&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+  server:
     error:
       include-stacktrace: never
+
